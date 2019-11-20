@@ -192,7 +192,7 @@ def log(s, with_prefix=True, with_timestamp=True, color=None):
             out = colorize(out, color)
         if not _log_tabular_only:
             # Also log to stdout
-            print(out)
+            # print(out)
             for fd in list(_text_fds.values()):
                 fd.write(out + '\n')
                 fd.flush()
